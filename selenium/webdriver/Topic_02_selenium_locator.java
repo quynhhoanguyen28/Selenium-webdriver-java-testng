@@ -7,7 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_00_Template {
+public class Topic_02_selenium_locator {
 
     WebDriver driver;
     @BeforeClass
@@ -33,7 +33,7 @@ public class Topic_00_Template {
 
     @Test
     public void TC_04() {
-        driver.findElement(By.linkText("Search"));
+        driver.findElement(By.linkText("Electronics "));
     }
 
     @Test
