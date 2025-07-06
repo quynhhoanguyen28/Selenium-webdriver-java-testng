@@ -22,11 +22,11 @@ Trên laptop cá nhân, test run trên 1 trong 3 trình duyệt: Chrome, Edge, F
 ## NGUYÊN LÝ CƠ BẢN
 
 ### Tìm hiểu chung về Selenium
-### 1.Cơ chế hoạt động: 
+### Cơ chế hoạt động: 
 Selenium 4 hoạt động theo mô hình client-server: Script (client) gửi lệnh qua W3C Protocol đến các browser driver (server), và driver thực hiện thao tác trên trình duyệt.
 ![image](https://github.com/user-attachments/assets/99e5eadf-6745-4cd9-9654-01d13e5686cd)
 
-### 2. Các cách tương tác với element trên Website thông qua Selenium
+### Các cách tương tác với element trên Website thông qua Selenium
 1. Selenium locator
    - Selenium Locator là cách để xác định các phần tử HTML trên trang web, bằng cách sử dụng các hàm (methods) được cung cấp bởi Selenium WebDriver.
      ```
@@ -42,33 +42,50 @@ Selenium 4 hoạt động theo mô hình client-server: Script (client) gửi l�
 
 3. Xpath
 - XPath (XML Path Language) là một ngôn ngữ truy vấn giúp xác định vị trí phần tử trong cấu trúc cây HTML.
-- Ưu điểm:
-+ Có thể truy xuất phần tử phức tạp.
-+ Hỗ trợ tìm từ cha đến con, hoặc theo điều kiện cụ thể.
 ```
 input[type='text']
 ```
 
 4. Css
 - CSS Selector là cú pháp dùng trong CSS để chọn các phần tử HTML, và cũng được Selenium hỗ trợ làm locator.
-- Ưu điểm:
-+ Nhanh hơn XPath trong hầu hết trình duyệt.
-+ Cú pháp ngắn gọn, dễ học.
 
-5. Một số browser command phổ biến
+### Cách giả lập các tương tác trên browser thông qua Selenium
+1. Browser command là các lệnh được cung cấp bởi Selenium WebDriver để điều khiển trình duyệt web
 
+2. Các Browser command phổ biến
+   ```java
+// Browser Commands trong Selenium WebDriver
 
+// Mở một trang web
+driver.get("https://example.com");
 
+// Lấy tiêu đề trang hiện tại
+String title = driver.getTitle();  // Trả về "Example Domain"
 
-### PHÁT SINH
+// Lấy URL hiện tại
+String currentUrl = driver.getCurrentUrl();  // Trả về "https://example.com"
 
-_Các sự cố, vẫn đề, lỗi mà không xử lý được, hoặc xử lý mất quá 4h thì nên ghi vào đây, hoặc ghi vào [issue của GitHub](https://github.com/neittien0110/ProjectSample/issues). Sẽ được tính điểm. Ví dụ__
+// Lấy toàn bộ mã nguồn HTML của trang
+String pageSource = driver.getPageSource();
 
-- __Lỗi: blablablabla__
-  - Chi tiêt: .....
-  - Nguyên nhân: ...
-  - Giải pháp: chưa có
+// Điều hướng đến một URL khác (tương tự driver.get)
+driver.navigate().to("https://google.com");
 
+// Quay lại trang trước đó
+driver.navigate().back();
+
+// Tiến tới trang tiếp theo
+driver.navigate().forward();
+
+// Tải lại trang hiện tại
+driver.navigate().refresh();
+
+// Đóng tab hiện tại
+driver.close();
+
+// Đóng toàn bộ trình duyệt và kết thúc session WebDriver
+driver.quit();
+```
   
 ## KẾT QUẢ
 Các ảnh chụp với caption giải thích.
