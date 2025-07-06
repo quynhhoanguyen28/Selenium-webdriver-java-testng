@@ -116,6 +116,7 @@ String placeholder = element.getAttribute("placeholder");
 ### Video demo phần Selenium locator: https://drive.google.com/file/d/1qPzqKxTEqKMD-iXe8X5FSYUlTjYsL7cq/view?usp=sharing
 
 ### Video demo phần Xpath: https://drive.google.com/file/d/1EchynfvZa3U-t8WlV7U1_-HFJEUMWMhT/view?usp=sharing
+```
 Description: Check một số case register tài khoản trên trang https://alada.vn/tai-khoan/dang-ky.html
 Case 1: Register với empty data
 Case 2: Register với invalid email
@@ -123,20 +124,26 @@ Case 3: Register với invalid confirm email
 Case 4: Register với invalid password
 Case 5: Register với incorrect confirm password
 Case 6: Register với invalid phone number
+```
 
 ### Video demo phần Browser command: https://drive.google.com/file/d/1mNwfqMYN1COJN-9URT38Kejc6qso9WqW/view?usp=sharing
+```
 Case 1: Verify URL (getCUrrentUrl)
 Case 2: Verify Title (getTitle)
 Case 3: Navigate page (Back/ forward)
 Case 4: Get page source code (getPageSource)
+```
 
 ### Video demo phần Web element: https://drive.google.com/file/d/1AEW6X9oz9LELdwpsWD6Cyuch7HDdcRSP/view?usp=sharing
+```
 Case 1: Kiểm tra phần tử display (isDisplayed)
 Case 2: Kiểm tra phần tử enabled/ disabled (isEnabled)
 Case 3: Kiểm tra phần tử selected (isSelected)
 Case 4: Register fucntion trên web https://login.mailchimp.com/signup/
+```
 
 ### Video demo 1 case full luồng nhiều steps kết hợp các kiến thức trên: https://drive.google.com/file/d/1lxfUcsF40aD6bDUDUOYR7Bm93adg2zWj/view?usp=sharing
+```
 Step 01 – Truy cập vào trang: http://live.techpanda.org/
 Step 02 – Click vào link "My Account" để tới trang đăng nhập
 Step 03 – Click CREATE AN ACCOUNT button để tới trang đăng kí tài khoản
@@ -150,6 +157,7 @@ Step 09 - Bấm chọn sản phẩm Samsung Galaxy
 Step 10 - Chọn Add your review
 Step 11 - Điền các thông tin và ấn Submit
 Step 12 - Verify message xuất hiện "Your review has been accepted for moderation"
+```
 
 
 
