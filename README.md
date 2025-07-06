@@ -31,14 +31,14 @@ Selenium 4 hoạt động theo mô hình client-server: Script (client) gửi l�
    - Selenium Locator là cách để xác định các phần tử HTML trên trang web, bằng cách sử dụng các hàm (methods) được cung cấp bởi Selenium WebDriver.
      ```
      driver.findElement(By.id("element_id"));
-driver.findElement(By.name("element_name"));
-driver.findElement(By.className("class_name"));
-driver.findElement(By.tagName("tag_name"));
-driver.findElement(By.linkText("full link text"));
-driver.findElement(By.partialLinkText("partial text"));
-driver.findElement(By.cssSelector("css_selector"));
-driver.findElement(By.xpath("xpath_expression")); 
-```
+     driver.findElement(By.name("element_name"));
+     driver.findElement(By.className("class_name"));
+     driver.findElement(By.tagName("tag_name"));
+     driver.findElement(By.linkText("full link text"));
+     driver.findElement(By.partialLinkText("partial text"));
+     driver.findElement(By.cssSelector("css_selector"));
+     driver.findElement(By.xpath("xpath_expression")); 
+     ```
 
 3. Xpath
 - XPath (XML Path Language) là một ngôn ngữ truy vấn giúp xác định vị trí phần tử trong cấu trúc cây HTML.
