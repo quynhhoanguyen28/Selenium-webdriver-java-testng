@@ -53,7 +53,7 @@ input[type='text']
 1. Browser command là các lệnh được cung cấp bởi Selenium WebDriver để điều khiển trình duyệt web
 
 2. Các Browser command phổ biến
-   ```java
+```java
 // Browser Commands trong Selenium WebDriver
 
 // Mở một trang web
@@ -88,6 +88,6 @@ driver.quit();
 ```
   
 ## KẾT QUẢ
-Các ảnh chụp với caption giải thích.
-Hoặc video sản phẩm
+Video demo:
+
 
